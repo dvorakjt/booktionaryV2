@@ -1,6 +1,6 @@
 # Book Search
 ![Screenshot of Book Search by dvorakjt](./read_me_images/screen1.gif)  
-Book Search is a React application that allows users to search for books through the Google Books API. Users can view both a list of books, and more detailed information about an individual book. Users can save book to their collection, remove books from their collection, and filter through their collection based on a search term that they can enter. While these features all performed correctly locally, there are issues with the API routes in the deployed version that I have been unable to resolve as of now. A link to the deployed version can be found [here.]
+Book Search is a React application that allows users to search for books through the Google Books API. Users can view both a list of books, and more detailed information about an individual book. Users can save book to their collection, remove books from their collection, and filter through their collection based on a search term that they can enter. While these features all performed correctly locally, there are issues with the API routes in the deployed version that I have been unable to resolve as of now. A link to the deployed version can be found [here.](https://safe-plains-14217.herokuapp.com/mybooks)
 
 ## Table of Contents
 
@@ -20,9 +20,6 @@ Book Search is a MERN application. Books saved by a user are stored in a Mongo D
 ### Dependencies
 
 Express.js, Mongoose, Axios, React, React Router DOM, Concurrently, if-env, Nodemon
-
-## Usage
-![Usage Image](./read_me_images/screen2)
 
 ## Design
 
