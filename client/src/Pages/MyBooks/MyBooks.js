@@ -11,10 +11,6 @@ import { useBookStoreContext } from '../../Utils/BookStore';
 
 const axios = require('axios');
 
-//determine the correct port
-let PORT = process.env.PORT || 'http://localhost:3001';
-if (process.env.PORT) { PORT = "" };
-
 function MyBooks() {
     const [state, dispatch] = useBookStoreContext();
 
@@ -22,7 +18,7 @@ function MyBooks() {
         async function fetchData() {
             if (state.myBooks.length < 1) {
                 try {
-                    const response = await axios.get(PORT + '/api/getbooks');
+                    const response = await axios.get('/api/getbooks');
                     dispatch({
                         type: "UPDATE_MY_BOOKS",
                         myBooks: response.data

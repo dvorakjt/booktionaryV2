@@ -5,10 +5,6 @@ import { Link } from "react-router-dom";
 //context
 import { useBookStoreContext } from '../../Utils/BookStore';
 
-//determine the correct port
-let PORT = process.env.PORT || 'http://localhost:3001';
-if (process.env.PORT) { PORT = "" };
-
 const axios = require('axios');
 
 function BookTable({ books, myBooks }) {
@@ -16,8 +12,8 @@ function BookTable({ books, myBooks }) {
 
     async function handleAdd(bookIndex) {
         try {
-            const post = await axios.post(PORT + '/api/addbook', { ...books[bookIndex], authors: books[bookIndex].authors.join(", ") });
-            const response = await axios.get(PORT + '/api/getbooks');
+            const post = await axios.post('/api/addbook', { ...books[bookIndex], authors: books[bookIndex].authors.join(", ") });
+            const response = await axios.get('/api/getbooks');
             dispatch({
                 type: "UPDATE_MY_BOOKS",
                 myBooks: response.data
@@ -30,8 +26,8 @@ function BookTable({ books, myBooks }) {
 
     async function handleDelete(bookIndex) {
         try {
-            const deletion = await axios.delete(PORT + `/api/delete/${books[bookIndex].googleId}`);
-            const response = await axios.get(PORT + '/api/getbooks');
+            const deletion = await axios.delete(`/api/delete/${books[bookIndex].googleId}`);
+            const response = await axios.get('/api/getbooks');
             dispatch({
                 type: "UPDATE_MY_BOOKS",
                 myBooks: response.data
