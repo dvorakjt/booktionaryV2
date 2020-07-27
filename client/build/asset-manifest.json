@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.57dddb37.chunk.css",
+    "main.js": "/static/js/main.a65c2628.chunk.js",
+    "main.js.map": "/static/js/main.a65c2628.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1247338a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1247338a.js.map",
+    "static/js/2.6fccd5e2.chunk.js": "/static/js/2.6fccd5e2.chunk.js",
+    "static/js/2.6fccd5e2.chunk.js.map": "/static/js/2.6fccd5e2.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.903c06e4f605e4f895e337a70680e241.js": "/precache-manifest.903c06e4f605e4f895e337a70680e241.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.57dddb37.chunk.css.map": "/static/css/main.57dddb37.chunk.css.map",
+    "static/js/2.6fccd5e2.chunk.js.LICENSE.txt": "/static/js/2.6fccd5e2.chunk.js.LICENSE.txt",
+    "static/media/isometric-books-vector.jpg": "/static/media/isometric-books-vector.9e88f8ad.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1247338a.js",
+    "static/js/2.6fccd5e2.chunk.js",
+    "static/css/main.57dddb37.chunk.css",
+    "static/js/main.a65c2628.chunk.js"
+  ]
+}
