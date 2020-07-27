@@ -7,7 +7,7 @@ function Header() {
     return (
         <header style={{ backgroundImage: "url(" + bg + ")" }}>
             <div id="logoDiv">
-                <img src={logo} alt="B" id="logoImg" /><h1>ooktionary</h1>
+                <img src={logo} alt="B" id="logoImg" /><h1>ook Search</h1>
             </div>
         </header>
     )
