@@ -1,0 +1,59 @@
+table {
+    margin: auto;
+    margin-bottom: 40px;
+    border: 2px dashed blue;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+table a {
+    color: blue;
+    text-decoration: underline;
+}
+
+table a:link {
+    color: blue;
+}
+
+table a:visited {
+    color: purple;
+}
+
+table a:hover {
+    color: lightblue;
+}
+
+td {
+    border-bottom: 2px dashed lightblue;
+    min-height: 30px;
+}
+
+.viewBtn {
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.addBtn {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(0, 182, 121);
+    border: none;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.deleteBtn {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 0, 0);
+    border: none;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
