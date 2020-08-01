@@ -1,19 +1,23 @@
 # Book Search
 ![Screenshot of Book Search by dvorakjt](./read_me_images/screen1.gif)  
-Book Search is a React application that allows users to search for books through the Google Books API. Users can view both a list of books, and more detailed information about an individual book. Users can save book to their collection, remove books from their collection, and filter through their collection based on a search term that they can enter. While these features all performed correctly locally, there are issues with the API routes in the deployed version that I have been unable to resolve as of now. A link to the deployed version can be found [here.](https://safe-plains-14217.herokuapp.com/mybooks)
+Book Search is a React application that allows users to search for books through the Google Books API. Users can view both a list of books, and more detailed information about an individual book. Users can save book to their collection, remove books from their collection, and filter through their collection based on a search term that they can enter. A link to the deployed version can be found [here.](https://safe-plains-14217.herokuapp.com/mybooks)
 
 ## Table of Contents
 
-[Introduction](#introduction)  
+[Description](#description)  
 [Installation](#installation)
 [Design](#design)  
 [About the Author](#about-the-author)  
 
-## Introduction
+## Description
 
 ![GitHub language count](https://img.shields.io/github/languages/count/dvorakjt/booktionaryV2) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dvorakjt/booktionaryV2) ![GitHub repo size](https://img.shields.io/github/repo-size/dvorakjt/booktionaryV2)
 
-Book Search is a MERN application. Books saved by a user are stored in a Mongo Database using Mongoose models. Express.js is used to create a server, and the front end of the application was built using React.js. Node.js is used to start the express server. Users can view one of three pages, which are each arrived at via front-end routing through React Router DOM. From the searchbooks page, users can enter a search term in the search bar, which queries the Google Books API and returns a list of books. These are displayed in a table, dynamically generated with React. Within the table, users will see the Book's thumbnail and title (both of which double as links to the book on Google Books) and the authors. The user can use the view button to see more information about the book, or click the add button to add the book to their collection. Once the book is added to the collection, the add button becomes a remove button. This is accomplished by saving the id provided by Google books to the database. When Google books is queried, if the application finds an id amongst the search results that matches one in the user's collection, it knows to change the add button to a remove button. From within the View My Books page, users can remove or view books. They can also filter through their list of books by entering a search term. The searchbar is a smart component, and it handles searches differently based on the scope value that is passed in as a prop. This search feature needs additionally code to reset the search parameter to an empty string upon revisting the View My Books page. 
+Book Search is a MERN application. Books saved by a user are stored in a Mongo Database using Mongoose models. Express.js is used to create a server, and the front end of the application was built using React.js. Node.js is used to start the express server. Users can view one of three pages, which are each arrived at via front-end routing through React Router DOM. From the searchbooks page, users can enter a search term in the search bar, which queries the Google Books API and returns a list of books. These are displayed in a table, dynamically generated with React.  
+
+Within the table, users will see the Book's thumbnail and title (both of which double as links to the book on Google Books) and the authors. The user can use the view button to see more information about the book, or click the add button to add the book to their collection. Once the book is added to the collection, the add button becomes a remove button. This is accomplished by saving the id provided by Google books to the database. When Google books is queried, if the application finds an id amongst the search results that matches one in the user's collection, it knows to change the add button to a remove button.  
+
+From within the View My Books page, users can remove or view books. They can also filter through their list of books by entering a search term. The searchbar is a smart component, and it handles searches differently based on the scope value that is passed in as a prop. This search feature needs additionally code to reset the search parameter to an empty string upon revisting the View My Books page. 
 
 
 ### Dependencies
