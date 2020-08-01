@@ -5,7 +5,6 @@ Book Search is a React application that allows users to search for books through
 ## Table of Contents
 
 [Description](#description)  
-[Installation](#installation)
 [Design](#design)  
 [About the Author](#about-the-author)  
 
